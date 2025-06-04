@@ -22,6 +22,9 @@ export const RootStackNavigator = () => {
       <RootStack.Screen
         name={RootStackScreens.Setting}
         component={SettingStackNavigator}
+        options={{
+          headerShown: false,
+        }}
       />
     </RootStack.Navigator>
   );
