@@ -1,4 +1,4 @@
-import {Text, SafeAreaView, TouchableOpacity, StyleSheet} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import React from 'react';
 import {RootStackScreens} from '../../../Utils/Globals/ScreensNames';
 import {CommonActions, useNavigation} from '@react-navigation/native';
@@ -20,7 +20,7 @@ const PickVoice = () => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <CustomButton text="Dismiss" buttonAction={navigateToMain} />
+      <CustomButton text="Confirm" buttonAction={navigateToMain} />
     </SafeAreaView>
   );
 };

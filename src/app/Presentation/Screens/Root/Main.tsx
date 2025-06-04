@@ -30,7 +30,6 @@ const Main = () => {
         style={styles.settingButton}>
         <SettingIcon width="30" height="30" />
       </TouchableOpacity>
-
       <CustomButton text="VoiceBot" buttonAction={navigateToVoiceBot} />
     </SafeAreaView>
   );
@@ -39,12 +38,13 @@ const Main = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
-    gap: 30,
   },
   settingButton: {
-    margin: 10,
-    alignSelf: 'flex-start',
+    position: 'absolute',
+    top: 10,
+    left: 10,
   },
 });
 
