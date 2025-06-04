@@ -9,7 +9,11 @@ const RootStack = createStackNavigator();
 
 export const RootStackNavigator = () => {
   return (
-    <RootStack.Navigator initialRouteName={RootStackScreens.OnBoard}>
+    <RootStack.Navigator
+      initialRouteName={RootStackScreens.OnBoard}
+      screenOptions={{
+        headerShown: false,
+      }}>
       <RootStack.Screen
         name={RootStackScreens.OnBoard}
         component={OnBoardStackNavigator}
