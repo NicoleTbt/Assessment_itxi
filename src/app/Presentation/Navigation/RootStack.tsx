@@ -13,11 +13,15 @@ import {
 
 const RootStack = createStackNavigator();
 
-export const RootStackNavigator = () => {
+export const RootStackNavigator = ({
+  initialRoute,
+}: {
+  initialRoute: 'OnBoardStack';
+}) => {
   return (
     <RootStack.Navigator
-      initialRouteName={RootStackScreens.OnBoard}
-      screenOptions={NavigatorsScreenOptions}>
+      screenOptions={NavigatorsScreenOptions}
+      initialRouteName={initialRoute}>
       <RootStack.Screen
         name={RootStackScreens.OnBoard}
         component={OnBoardStackNavigator}
