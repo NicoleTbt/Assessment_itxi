@@ -1,7 +1,7 @@
 import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {colors} from '../../Utils/Globals/colors';
-import {ICustomButtonProps} from '../../Models/Navigation/UIComponents/UIComponents.model';
+import {ICustomButtonProps} from '../../Models/UIComponents/UIComponents.model';
 
 const CustomButton = ({
   text,
