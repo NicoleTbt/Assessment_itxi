@@ -5,6 +5,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {RootStackNavigator} from './src/app/Presentation/Navigation/RootStack';
 import SplashScreen from './src/app/Presentation/Screens/Shared/SplashScreen';
+import {linkingConfig} from './src/app/Utils/Config/deepLinkingConfig';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,7 +25,7 @@ function App(): React.JSX.Element {
 
   return (
     <GestureHandlerRootView style={styles.gestureView}>
-      <NavigationContainer>
+      <NavigationContainer linking={linkingConfig}>
         <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
           <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
           <RootStackNavigator />
