@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
+import {SafeAreaView, TouchableOpacity, StyleSheet} from 'react-native';
 import React from 'react';
 import SettingIcon from '../../../Utils/Assets/SettingIcon';
 import {useNavigation} from '@react-navigation/native';

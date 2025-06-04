@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import React from 'react';
 import CustomButton from '../../UIComponents/CustomButton';
 import {useNavigation} from '@react-navigation/native';

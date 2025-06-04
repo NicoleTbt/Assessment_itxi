@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StyleSheet,
-  TouchableOpacity,
-  TextInput,
-} from 'react-native';
+import {View, Text, SafeAreaView, StyleSheet, TextInput} from 'react-native';
 import React, {useState} from 'react';
 import {colors} from '../../../Utils/Globals/colors';
 import {useNavigation} from '@react-navigation/native';

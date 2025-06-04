@@ -1,4 +1,4 @@
-import {createStackNavigator, TransitionSpecs} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import {RootStackScreens} from '../../Utils/Globals/ScreensNames';
 import {SettingStackNavigator} from './SettingStack';
 import {OnBoardStackNavigator} from './OnBoardStack';
