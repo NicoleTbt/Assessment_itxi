@@ -28,7 +28,6 @@ const PickVoice = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'yellow',
     justifyContent: 'center',
     alignItems: 'center',
   },

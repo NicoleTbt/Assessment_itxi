@@ -46,7 +46,6 @@ const EnterCompanyId = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'green',
     alignItems: 'center',
   },
   container: {

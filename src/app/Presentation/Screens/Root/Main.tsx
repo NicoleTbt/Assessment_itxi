@@ -39,7 +39,6 @@ const Main = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: 'orange',
     alignItems: 'center',
     gap: 30,
   },
