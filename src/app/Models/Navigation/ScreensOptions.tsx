@@ -4,13 +4,36 @@ export const NavigatorsScreenOptions: StackNavigationOptions = {
   headerTitleAlign: 'center',
 };
 
+export const RootOnBoardStackOptions: StackNavigationOptions = {
+  headerShown: false,
+  gestureEnabled: true,
+};
+
+export const OnBoardEnterIsScreenOptions: StackNavigationOptions = {
+  title: 'Enter Company Id',
+};
+
+export const RootSettingStackOptions: StackNavigationOptions = {
+  headerShown: false,
+  presentation: 'modal',
+  gestureEnabled: true,
+  gestureDirection: 'vertical',
+};
+
 export const SettingScreenOptions: StackNavigationOptions = {
   headerLeft: () => null,
 };
 
-export const RootOnBoardStackOptions: StackNavigationOptions = {
-  headerShown: false,
-  gestureEnabled: true,
+export const SettingSetIdScreenOptions: StackNavigationOptions = {
+  title: 'Set Company Id',
+};
+
+export const SettingEnterIdScreenOptions: StackNavigationOptions = {
+  title: 'Enter Company Id',
+};
+
+export const SettingPickVoiceScreenOptions: StackNavigationOptions = {
+  title: 'PickVoice',
 };
 
 export const MainScreenOptions: StackNavigationOptions = {
@@ -32,11 +55,4 @@ export const MainScreenOptions: StackNavigationOptions = {
       },
     };
   },
-};
-
-export const RootSettingStackOptions: StackNavigationOptions = {
-  headerShown: false,
-  presentation: 'modal',
-  gestureEnabled: true,
-  gestureDirection: 'vertical',
 };

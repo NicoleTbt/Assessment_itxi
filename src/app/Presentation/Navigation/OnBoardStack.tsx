@@ -3,7 +3,10 @@ import {OnBoardStackScreens} from '../../Utils/Globals/ScreensNames';
 import Welcome from '../Screens/OnBoard/Welcome';
 import EnterCompanyId from '../Screens/Shared/EnterCompanyId';
 import PickVoice from '../Screens/Shared/PickVoice';
-import {NavigatorsScreenOptions} from '../../Models/Navigation/ScreensOptions';
+import {
+  NavigatorsScreenOptions,
+  OnBoardEnterIsScreenOptions,
+} from '../../Models/Navigation/ScreensOptions';
 
 const OnBoardStack = createStackNavigator();
 
@@ -19,6 +22,7 @@ export const OnBoardStackNavigator = () => {
       <OnBoardStack.Screen
         name={OnBoardStackScreens.EnterCompanyId}
         component={EnterCompanyId}
+        options={OnBoardEnterIsScreenOptions}
       />
       <OnBoardStack.Screen
         name={OnBoardStackScreens.PickVoice}

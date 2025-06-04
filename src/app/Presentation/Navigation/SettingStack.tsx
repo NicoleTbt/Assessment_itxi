@@ -6,7 +6,10 @@ import PickVoice from '../Screens/Shared/PickVoice';
 import SetCompanyId from '../Screens/Setting/SetCompanyId';
 import {
   NavigatorsScreenOptions,
+  SettingEnterIdScreenOptions,
+  SettingPickVoiceScreenOptions,
   SettingScreenOptions,
+  SettingSetIdScreenOptions,
 } from '../../Models/Navigation/ScreensOptions';
 
 const SettingStack = createStackNavigator();
@@ -24,14 +27,17 @@ export const SettingStackNavigator = () => {
       <SettingStack.Screen
         name={SettingStackScreens.SetCompanyId}
         component={SetCompanyId}
+        options={SettingSetIdScreenOptions}
       />
       <SettingStack.Screen
         name={SettingStackScreens.EnterCompanyId}
         component={EnterCompanyId}
+        options={SettingEnterIdScreenOptions}
       />
       <SettingStack.Screen
         name={SettingStackScreens.PickVoice}
         component={PickVoice}
+        options={SettingPickVoiceScreenOptions}
       />
     </SettingStack.Navigator>
   );

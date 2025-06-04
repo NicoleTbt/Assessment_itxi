@@ -15,7 +15,7 @@ const SetCompanyId = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <CustomButton
-        text="Enter Company Id"
+        text="Set Other Company Id"
         buttonAction={navigateToEnterCompanyId}
       />
     </SafeAreaView>
