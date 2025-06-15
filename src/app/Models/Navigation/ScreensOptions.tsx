@@ -47,7 +47,7 @@ export const MainScreenOptions: StackNavigationOptions = {
   cardStyleInterpolator: ({current, layouts}) => {
     const translateY = current.progress.interpolate({
       inputRange: [0, 1],
-      outputRange: [-layouts.screen.height, 0],
+      outputRange: [layouts.screen.height, 0],
     });
     return {
       cardStyle: {
