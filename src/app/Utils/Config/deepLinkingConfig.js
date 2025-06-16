@@ -1,6 +1,7 @@
-import { RootStackScreens, OnBoardStackScreens, SettingStackScreens } from "../Globals/ScreensNames";
+import { RootStackScreens, SettingStackScreens } from "../Globals/ScreensNames";
 
 const config = {
+    initialRouteName: RootStackScreens.Main,
     screens: {
         [RootStackScreens.Main]: 'main',
         [RootStackScreens.Setting]: {

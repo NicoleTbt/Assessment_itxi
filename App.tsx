@@ -16,9 +16,8 @@ function App(): React.JSX.Element {
   useEffect(() => {
     const timer = setTimeout(async () => {
       const url = await Linking.getInitialURL();
-      if (!url) {
-        setInitialRoute('OnBoardStack');
-      }
+
+      setInitialRoute(url ? RootStackScreens.Main : RootStackScreens.OnBoard);
 
       setShowSplash(false);
     }, 3000);
